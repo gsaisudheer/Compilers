@@ -1,0 +1,47 @@
+ 1: 	in TINY language -
+ 2: 	compute factorial
+ 3: }
+ 4: read x;	
+	4: reserved word: read
+	4: ID, name= x
+	4: ;
+ 5: if 0 < x then {don't compute if x <=0 }
+	5: reserved word: if
+	5: NUM, val= 0
+	5: <
+	5: ID, name= x
+	5: reserved word: then
+ 6: 	fact:=1;
+	6: ID, name= fact
+	6: :=
+	6: NUM, val= 1
+	6: ;
+ 7: 	repeat
+	7: reserved word: repeat
+ 8: 		fact:=(fact*x);
+	8: ID, name= fact
+	8: :=
+	8: (
+	8: ID, name= fact
+	8: *
+	8: ID, name= x
+	8: )
+	8: ;
+ 9: 		x := x-1
+	9: ID, name= x
+	9: :=
+	9: ID, name= x
+	9: -
+	9: NUM, val= 1
+10: 	until x = 0;
+	10: reserved word: until
+	10: ID, name= x
+	10: =
+	10: NUM, val= 0
+	10: ;
+11: write fact { output factorial of x}
+	11: reserved word: write
+	11: ID, name= fact
+12: end
+	12: reserved word: end
+13: 
